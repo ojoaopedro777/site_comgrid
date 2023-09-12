@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <nav class="navbar col-12  position-fixed bg-dark navbar-expand-lg" data-bs-theme="dark" style="z-index:999">
+      <div class="container-fluid col-10">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj36La74qOBAxX0LbkGHQtCAb4QFnoECBkQAQ&url=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F268910%2FCuphead%2F&usg=AOvVaw0wycgYOqMX72aTQovzeb7r&opi=89978449">Compre aqui</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#produtos">sobre o jogo</a></li>
+                <li><a class="dropdown-item" href="#conteudos">conteudos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#footer">direitos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">em breve</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://meups.com.br/wp-content/uploads/2020/07/CUPHEAD-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.nintendolife.com/b0cf17e1d8e59/cuphead.large.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images2.alphacoders.com/905/905171.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h2 id="produtos" class="text-center">Um pouco mais sobre o jogo</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4 col-11 m-auto">
+      <div class="col">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR19kBHblzqlwfoiKSZp7ro4FCLxU2FZiZFTA&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cuphead</h5>
+            <p class="card-text">Assim como o game, a série animada tem como protagonistas os irmãos xícaras fazendo traquinagens na Ilha Tinteiro e se destaca pela sua estética antiquada dos anos 1930, contando inclusive com o clássico "chuvisco" na tela, comum nas televisões antigas (e presente também no game).</p>
+               <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  veja mais
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">sobre</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Saiba mais sobre o jogo <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj36La74qOBAxX0LbkGHQtCAb4QFnoECEwQAQ&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FCuphead&usg=AOvVaw0Es1qdQ9-gRMUJJ-ZNo8SS&opi=89978449">aqui</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAABsFBMVEX/0BTa2dUCgLAfHx3R0cn14f3oASP39vIAAAD///3////Z2NTcAiX/zg/h4N7d3Nj/0hTIx8PW1s4AABcAABH/1RAAAAsAAAkAABsAABXQ0MYbGxkAAB0AABD55f//1xGEhIIUFBLu7enAwL7Pzsynp6Wfnp2MjIoRAAADf7L96v85OTdEREOurqwAgK0AACALCwcAIB1paWcEaZZ6eXdVVVMpKScAdq0ZIBztACOUlI+4t7YAdqVBQT9fX14bFArOqxJGPRnmvhZPS1G5qr3OvdQaKzX69P4QVXMAFxgAEAjwyhmDagIxLxuxlx2fgxkzKgloVxnIpRcWFx03KyGGdB5EPCFeTh2PfBl4Zxu1nBUmIRmhiB8JHyYSPVMFaYsaFiITT2MEZZkWPEwOWnsAGykARWIiIhYaGwAWMj/h0emCdoVGOwkQTHKUipQqJgigkaVpYXEnKTsAAS80NT5RUGFeUwBAOAC/rsVFPkoRXHmJuNJoq8odLCsiFQXP5+y21uJUnMEZABJ9biduFSCcESGEEiJUGiA4HB+4DCNUGBvLBSMsHh6yCiZjX1ePGCHbCsmyAAAc0UlEQVR4nO2diVvbVrbADSZwjWJJXmRjBNjCO14ijO2AbYwxCcNSoOCyMyEUJpmQTqaZl5nXSdM0My+kWZrpv/zulbxouZJsDCWez6fzTWlwLP101nvuIpOpK13pSle60pWudKUrXelKV7rSla50pStdMRar1XrTt3C98l8PaEKMN30H1yy/F+ANPUea/j0Qaaa8Sl/3RTQuff2AVqt39SuwVmau9So3JzQD8XI54Fj33vStXIdYaWYDFEmLxcZ5tukbMtPqrVyLoXpLXw/lLQMDAxYyDjZNN0l4DYBQY9ugOD5QlRSYX73yazQrCO/KEZnyPAhZanwDFh9Yu6lgeh2ANLPlrAQafJAwB765MUJBrhTRu+6eHZfyfQGEVwno3QPFAaVYQpDw6q7RslwhoHcbpFR8gg53bjDjXx2gBh8kDIPdG61prgaR2QMpCxZwwJIG+zdJeBWAVmZ9NIPHQ5JxH3lvNJa2LfSWY1abb2A85tliOpmQLjs4UgdwgASecgcD0vQOCGg4YNUN/WCnY/sIcPS3D8LjenxCsoCBpjMZrfTWaNFCGBFmnAdMZwKaTIc8dMCAPuDAOPuwfKODp0sLzPAJ6IDjRoT+G873lxSaLnsyQoChKAMjTbvWOzAb0syuO9EjEAQM3HAge6ds7ThCpuRKBWxCEjQ0UhvYpTsukjK7Fb/NZhtvzkjdB3SHAdL0WiYAAW2iigyMdNxsXr3ZRtslZPWxDxESBkZqsVgGxsmwa7vTeqVWugRCiFBwQwJbkVos44FgOnMYAVxlqNxhXmi10kfOvK3mhjY13UAglOFB5I8Plo4LyanIbsfVMzBRvECAgnlSPQo6my8LwE8nx4Xe3mg02tv7YLR00zfcstBlkKobqTTOWKhwDEQWT44RWVUK3E4njQzFlg6zDkI1IyWJhvKK0DBPCtHeaLK3ISfOrY4DNDGbQjIkpCrMz4K5B1LdiRJNPtzpPEC67C4GaipEvmjxQ7yTQq8SD8mS86BzCGtdR+ZINFKkusC4JZABc48KSRwe9MLKfCd5oSg0PS8YKSVkex80zgIWTlSha6vDciEUuuQWIim0zkAWLB7jlSdK8mHn5UJopNujCaRCS05wPl056cQWG73KxZEKi+CnQvRbfcACv995Xmil10EukM9GTqENFqb0CU8rqx3nhbAmnc8GzXMnvSjXfavng729U+71ThsXmlD7fqgy90i0zildL0wmF3c6bliIUsUut/StiFaY0lVh8my0E1uIdMnxYGpqSsjvU4WkLqF7r/NaiFard7NyNjVViAoq1AWMnq51oI2aTGXH6bdTonXqe2HvMSh1XByF4t3nz5rywmjyT3sdWM3AUcXQE+SFTajw0ddMB4YZE7MfQV6IwkjhW13AKVC+6Zu9lEAvnGrOC++si3HUigQpE+mThslGIkz9J5Pwy9rHbm7hOe3d5KbqXqjHF31UX3mBSLxehmGsq6ur5XK5VCptNQT+V6lchr+Bn4OfQZ+jxWdxM4SNXFj4VleFx1974d3SkGhr/Whve393fu2w4hmB4nACN5CK2+1yjY662G/mdzf3t/c2DrZK5VXxoVSV+7vp1GplditTYi5MTumpsHBcOdrenX/scTsRjdtlfpFZq5ihsLF0KBQKVgX+mAuHfb50KpXJzGbNoy6A8F3OubXd/b11iIoU+zsmVViRPhADaVSR7JNQrajDdnx2crpYiUTgjbLZTDEdDiX8tgBJhDJ/BoBnOR6AeJAkKZmQolA9RMDmzwdD4XQxE6s4kX5H/7q7v3FQKpsgZ1Wj16lN2rQ2/e0Uss6oQoUI7dGTCrx/cBgrpnNBf0C8bwRAhDkAFu7dPx+7df7DUw7E8mSPhlDwf1XegC0fzKWLcbMLmrH7O8iJTPd61Wmlj1x/qXthshf+k0QGuXT6R6izSDaTDiUCPVUFwdsl4D8UGTQD7tn5xNjYLShjE7eeAeDTJJTCCsqlqD5bAoK+gNbu/uvm3rqgzWvaXmA1rVYW615YQHpbeoDYDiFaPiAoTHmXRBGAZ7cmbjVk7HwBZJSfMwQlCcS58DcYp+b3j0plFMSuHFCs1yBhbzTaO/WXkyc8YvMFbT0kpUIThPRnQfxciocIx56CWaJ5wtpHBdA0D4p/fwjA1//YKK2KyfRKCcselOwLxyeLERCBIdFPCeFB6+EnAHgq2qZMJp6BWAuEje8jMiB7f2Ji7PyH75//DVJ+hSz2qhiRzTPe3crZAwg3lwknAhiTlAkZAuCeQn23xqqE8RasVBDoz4EYeF715bGJsVv3BcrNjdLVVAZWtGlpfX4UweWJHg2jlD7vEODvS/jGxs7v3bs/ViNMNRNpZN9nM4PvZd48NjFx677b+T/tzhdA3Vlh6CptzANXLJ0goOKIPqLHwMioIAASvrFbz7IotZm/FwmfNxdLZXxc/L7K4MfugfR2m8MzK7Tz0vYaeFjM2ex2xEUQfYb3k4d8jbuZuMetsEIxA/4uGlkMhFohpIgYC//ywrnKoZ+C+TYB6fJXr8GLdKLPbu/r6xMUR/QZ6S/ASv0PmqS5JivPhT8/54G/BT8kMzz6y1xFTZh1t1ff0PTjeNgvwCEJEM0AknHwDM9nNoN7Y6JtxQz9uPF96eo3cHGVkd5vb/xpNZUXqBodEnQ9YlgfkPSBhTrfGGSR8JmnXwieBG2raTckE/VvAN8rCSf+3tbEspXeeiHlE3RnAEj5gdSUzmV8NRWiQNOskRJZtvaX2axKhd9vtAe4LgMU0fp0owwVrzKIT7jIyQG5oqjdsX/GSaNgLCowzasejxTwq3aWIFnpvVYBYQZcaNwE9BE5HwyG1V/dB4lmVAgNQvp4nitrv3v/aKfVbGX2Z2UmajcGzMoyxIJCgVAJ1V9PLMSa8UIyI/0GllOa6A//29YiMua7mAywzwgQKlD6kFUKNJv5Z2M15QaNVQhTKvbxNEzkz+0Bzss1KEQZu06eoGLSWxh7uqIGfFr9/cQ/Y9q1Ol6BaieEj6mdIEPTa3EsoBYhfOALUi/hWBUgW/sATCAJo2RI2RQmUNO/BLC9SuYQA0gMa9oomQI/SBT4g9pCoRJqSWTMnDHwQoJMK4PwwoQSsJ2NmrSJxZioDiDBm6VXx1ioxMrGngGbkY1mlSYAzq8WkFNoEKERfVpOCEe5T6WDpJjaQlEmrAGeG5UzVEJlAgonRLVae4AKDSI0bUBoodLrK6uYqhPWQv3YxEJWX4MqC1VlwjYBvSZOkSaEVG/XKtZgDJVe/B4WEIb62ge+B3lKr5qh1CbAZq/OROEo/itXK4Aw5kljwNgznAvCSFgvmc9BWs9GVTFUeDwyJ4Rx7LKA6GyOkRCrAKw6oR1/Q9AFJRY69lxlYKKVpWpPYWJWt5qBVQMGUOaE0EouuRmcXt0D6Z4eNtuHA8SHUSoM7kkuPvFPXIxBsxQ1QIM4SqUwT2jlqQzw+0sAWq00zayDBRss981mJSCyTo0oQ6Xq7iVcHJPmBcC6o0IPCmkDEmQc8wXyTAgfUevbiqwmpvS1Q+iaUFlOAxBDSMCRksxB8DFGVlDqNtgIMwaQrch88OlKq3i0VTh6JCCENxgWbTgbxad6KsZLL47PElCBTyVWrJMosDEGZpnzsYmJ2hOaeP7Xlottb+mxJ1h9rtSsGpAQALE2apaOuNVjQRHvhbSh+BQEtAHzGnnUHCs+u3eO+r9w0PVda+NBmqa3QTxQe6xkBiQUfMNCqscmCoKLyQFVFjbNwxwh/YxeJqSCUsDDx6/nWPMiEnYugrqsT+9BVb7YbBGwvAPrp/o1ySIIKvIEsk48IEWAuDQNqvM8B61TXmn9oBNlqFy9WTE3t/jg5XEBTdqhabtk4fjklIsA7ul5Zbt5QKvV5N1yuhISt6fSIKdMhMj97MO4TAgB/yC5f+VYggXPlbNN0E/D2oBhEfA1e/pS2GEjzEkKk8rCdpvjUzYCPHvepmdgrFbvhutFQHpBygd8KkCih7BjMyHBxwctFsvgH6BMTEwoNMguqPD0axnSBwEPXy+eJSGadE45Wqju20ieLb72bK42N12Ist8+yPTIHiisJVIYQCHVq40U+iACrMqgIgiyL0jIrZxg0MkTZIo7fH16rFznkPzxxx9fFSByVJir/ClyZ6OpQGo10bvwanKDgcVXRgWI+tvYTEhlzRYJYEBponwA8g8KUlXyxARX1AAkbRn+9WkhqlzeePdn9OU/Q7pXr5J3C73Rl3OOXeNqBvofs6s2F8oPVMWooEKsjcKkMiAhJNUtw6BEw6KwGqN6Mgwii1PCGg7FUqM38CFZLMnCz/Bfb15FC72FJ6PmstdgjqLKp3L4AM+q+IZFQLUGYVIZl9z7gDqNgZRFgchhASm0yWYJv7Dx7qs3P7/5V2/hzSD6rsFXhWR0ae7OlsEsE+3dxHoDlQV+FaFdI1HAmBuQ3j+vAjTzMVJOyGNMlCDz5sii1oKqZO/du3d7k1FEiDzhzd1k79ncSEk/XTD7LqwzQKUoE6GQKPCAIZCQRhlcrcyCvJRwAPdY4fe8fqS/wF9Q5b8EHVogYfR4zqFHSHuPPLP4tRK4RFit1tQ3lgc+KWAao0JopmkJ4LjK7wnkfnMvk726i6eRMybvJoWAM/gv6Khnc491doIzpSEWXxOSOUyeQJkQqlD9aYKX5YmgRssiRkoibVgV2HyAPY5it/CpGO++QTr8+S403JN/a5+pYV01w5IQx0dBpSj7aqKN9uBslIxLo8wgoTFe4rK1xzCYV/bvCbJ5Poh190f0NSjURp+MrGsQWr2bbnz/jiSe/h+nGhFWE8VwQEUIb84v9TAWP+LlMnXAMPArviIs8DUr0cKP0BFfCTsC5irYdAgT/IFjFs+XGDnwfgPyakA7fshE5kFaaqO4lgMCrH9oMMPL1NdDBhGfkftJ5e4rUYO9vUtD2F0baBUa3kBhgCnRzKYbE2VQHB3GxVEzJ1HgoB9vo3yoBjgAZGmQovz8XAv6E6w02lsrBswjuA4bzWyPYgteqoh6qsyGAxNl+oRqTT2igM/EL81y+K5M/TOwXJXHGCL7+qQl/SHC2nbw5JJzA7M5jC6PcNgImnGXGdpKlxyYYk2rWoOlXVFqo2F8oqhFokGffKaeTEVOW9OfVKLJyI6qnkFnb7lVkRpdKzNaErZAQANWdS2QjRIEruAmZwEpAVSVo0jYehC1sFmZhSbAdIvqkxM+cagWlVhN5REWMzqHtnYgeiysUTG1DGTDTlFQQeNcz9diDPRRWfSGBmqwBVOfr/elY12lQmbPhfFAMgS2q1tY6L3RNAbQrjWiyMoK7nFcb7qWSgYzsr4v6WvHQBHgVER17AttfQgCqhBKBVzz9e0PeCfs0xhRwDpSlinU3XeWbRQCsvo3wLEae/SblWRE1YKitxyY8Qp0wHK9sINljnpAIZRruDiKWqk90mQ/q8yFfLihQEmIgSVMpOUIqpTKjlKDcJSkbmtBZ5eomtnE1dtoXG/vs9cWocv+clwKOK5sHtYGxdADZQokzHMG+9iNxbwmB4QO6cF0Xsm4p5ExrfS6R922EIa9lD+XTqVzflJmA2QKhHRaM/VfDphlzgHD02m7fL2Vx3ITtdJbHrWFwgJb0myEcdbBYxLFcE8gxQOO4wCI5WStKsIMCCmhrEHN1+rQwRTISS9NZiKq/lKrkqzMK3wQxlB1EiRTTtm0MDOPs9HhhLnmXSzIypqpkEgaSQcDfD1Z8LGagQYVGwwI1mw4BDSSQmRTcUgfvHdMGap4DszGkNpG7X5pGcaCFNFowcMRwaxFSjieAjyLZhVAqsYHDVfegc2DU9UpNa3K8b/35Hy09U9AFenhpeQfo7E2GpNHRz5Wv1+CgGVCxiJDpHwxALKpWssGDnQVyympXORlm3jR3iXlsUTw1tUrb6kcUHzMq7ZRe1iZ3zizX6LDFMgMyLpLg5aBgXpHDQZQIN/FRFDpSGvDJBzhkzuKESE+xqSdipUZ9LpDZaNZVYHCchKdQEJl/0wCG1LyoRgzV2jTQpOFyK4iDTLrzrQ6C6Yc8ucAR4weRa6345YHIMKGDn0AJAZxiIPjRZD1K58rGefaDTG9j1QHZ9Eboz4VIAyiynEjHPXK61F7pjI9OTm5PG2elhVhjdKSIBMcTOQqxEELVF+RUE0KkvFKe3TR3gJ3qBzvMntu9eyV2kRhPTokX20xPD399uLzxbtfzJMywqwkMpKBIgBparDBCH8cD5mBOYjrMGe4NuuY6IljXQlIb+MKtbCrpAQ0rblDUhUmwC8zt5F8ungvReRihHR4kI8DEA/1DIgTLhYykQKACxPYDnOKL7SXB6ci6rcLMNtubCW6pyxZmSOHtHtoz628678tSv/n95PSQkWW3Mg8RAL8bDGVKs7CmgfiYvGE2N1eIZP8yaM+ZgIC5tR5nmDXlCe+0jDMSJpr9vTyxe2GvJMSylvxFEkE05ksDymz8VTIRuLxYJrIg6Umm6F4eeDZUB81zOxhggwczY+qTnxltj2S3pM9s/xBAnj7w68NM1UtkUSbVYlAAO3s1V1bmH3SBmB0CQ4F1S015giTJnoom3tN+Um6PBJpVDP2+PInwTyhiK74S0OJ8hq69p09PQa7JMh05PJRJnkWWcPtJGQOnLjZK8rnVp6vRTObks6FfbYBOCMyfpQQtrS1rPFYLz9cgvrDv0YItSOwIS3u3GDkVgo/ytVVaI81AGta/CixUlweMCZMg0u1nGCJvvTvQ/wkNoodBM4xAlnPESPdzG21endddRVKNVgnfF8nZC9DCHN/dvESThhNJk9d81pTZ8wavmtPBbLOfVquw9JQXYVSH6wTfvrVLLPSlrciUzbUVWu5r328OLSpuVSG3sYMeEXCjHutJIu7zKazFkhrUbQBiNL+h0mJDvFfa0CYj5y0qkM0P3/k1VxSSR8MxTUSL+UDnv0yijXWmhcOuasltz218vm2nBDp8DdJPkT1ZuuE/tePks0niyRSn3unpHMKBL06pLncj/LHgWOzxNSjDbNf6z7Zwytiop+RE0oCjZnPJox37igE+uF/gMYBrTjtHZ9GHHu07ml83l1cLVMlpIJx4FnbK9Fe8TyQsqO29jAIxFKtv19G+ElWeYNM3iC3Y65JJrKRJ8dowZ2+8kS8of2ywSonegszpm8IrCUrwMPu7gnnnniPnDER0M//ojRRgVBatKHFhZlQgKx3TqtHrBgh9vi4yMMlox534Wwx4twsN3FElll3oyKsJRPpeAWd7wIef/3dKB8WjTTLYgD7Ua6AItEiz8XTobw/gMTmFyRAUFoVafWagXAWzD15WRA1pVQlzHuFs9OK89dthGfIR294DE5egLcT8CdC4XA4lA8BMVXYi9ViVEn4efLtu49wKCxhRIMInuN4vnrSEc/GimG/ru2SPYliRDyFXdCk0G4TVJosFM4eLUaAc/NgtbkDzujVh3BMqI9I9NRP8CmKi/PsOfAOAwiTxft38N8f3k5Pysb6ckHHA8VyulGWIu3BdAyACP/HJw8eLb08O3v5cmnp5MkiG3F61vYPVr10swdcwaFeVmOjB+a6AU5ssNn49zgNIhV+uj0zM3P7N/OkJqAYgrIGJSuynIQvNXsoOefq8PHD3a0yzbT0KiR6x5m2i8c4NEGYA6xNrGWwNtp/+/1v6M8g4jt9QohY7NG1HIKgxKGWzZ9IBBMJ6Mq2uaFy6yeslEZAAgI2RUhRGVC0C2P6t+pEgQAvJqujjJlP7w0Q+dnmioHGGVcZx2XOTmT2RljbMDTTZhBrRmrjDnEanOm/Pfn5du3ntwaEXLwZPkHQvZEhsHapTeXMrme2T3NToELIIOD9dlStXeA02N//7pcG7m+T2qFG0GFLJ8sEuJHSZY4Aok2ra86MfbhJRNS0Rrke4MPMzAcYZur/cWGgw+ZOCxCFyjgu++YVulxxC+G/KUckYuA/UIVFLRX+etH4QyNCtqnTAkS+HFi77OFxNCR0ZvqGBTs1ZKT8PHTDYT/PfsKq8N1b6TjKIJhqLHPEXNXmdij7tS3p8Fd3zCaUYcZKpEIAxd30ylss4Cez9M9mftF1Q053D6j0orPOtk6fpcs7Q5y44sduqEV0hA2Mu9nJz/04G5UB9t+e1iNs1kbJlFs5Pd0qoWn/Dkj1ibW0kRZhNoz12YPg8BPWRj/IVKjvhrz29jMpXwiw5TZPb6KZ9SFXNiSeb2Q3KN5goMnAVAE+YuOoDBAaKX5dbNUJbc3w+cGdrbaP8IahZvcOiCeqRzjp1jZUIAsrmuHZ5Xe4QPpJDvhJT4XGpyEIV3M0t3/HUIkHaw6QERGHkR4J8aQxzJItPwdSdtv08kW/EWD/zNvlNgHjo/tXcvqz1cqY1s0OOJYZrp/EpZUbyTwP0lSem7xQAypHUZ90ChreOC3BQdr8VR3+C5VoWt8ZcvH/Cdns9mEo1T4aGm9UxS5IHxFE85sJfvKif0aFqCDUThVNRFEqdaVvTkfb7Er7FQfg476EACbO6fapxJ5gBcLldwZ8qHzTAuQMq1GYk6bLV/oeC9pEe+mtfbPDBSrxVC5h67OrZdiWCIUXnNAP8+zy2xl9Hc70a2oQhHRPsxBWFbVTweAFahGd2Hi0eejwuAHgYplU2hcO55CEfelUJr7oAOC7vdLWCIylttjKL58MCDULNl69WlVun2Fwp3QN5+cLZ3ozjKm8dbS/u1bxeJwutwudE+0adY3OfS0euEubmBLrivcNF0Hlsy6hZqbQ3B9Z4/NBvus7vRgd5o5OMV8tl0tbWwdQtkrCYd/CGdjosHem/M1o1k/lVpbf3tZF1OhBGdTaVBp4Sr/He2Rkx9TX/kz8/9XdEVjD+mfd0xc6njjzFguI3x5Zx6NS7orBvsDrF5reHwE+u93HL7//oI2Ij6O6dRpFZFyPy94bf38FzRzBUBPosRXB8kfNYHMbBwjCpGYIJUhbzLHzRbyLi/aWHo9mE3YiMQsRNbQ4815to7oGSiY4x+7ql/EeJ5pe3RwBaZgugxDxPaxs1IwYJ2SzOgd1wPA5tK0/M/a7CrM+4o7BIt2eyIBl9u0HFePMhbLgli7dU/EFMmDkoKX+9XULU54fAumAfdjuT2fBCvtOwaiq1mQLaJXmGWSdO+WbDp8yQRXshsOdRT1he18ileVXuI8XtyWMiigjOdNFhRcoIvP88l6Ow5Q3hfEyLMwhYzgzvbL88TOaiZlBnDPS1gwHfBozWgRFhjjn2taX+aI/79bOEMjk0QDETpBUPrMC+I8Xn9D4d6YRRlkepGwa8ZNCSzAd26YvyjwbYmWY9UMREc11UGQgH0rHlgHgI+/fV1iW5dCLQ2bDNvz0J9Sevwgc8yX1ssEvRmAhd8RWux5iuEfzw+j9H5nZWGw2k/IFNZdUQrwUcB5+4W+7heWq9eibERDL9dWXGIqvxai+4YXCLzuEv80XgWd648uLLSqBd3gwfwfwxQTV7CoSaMy5WeAyH5m+qNynJXCc6C3tP/SAbDrfY8SI3g3Tk0jxbsfO+pW/BOT6BFrq6sGuwwPMxZCN0nz7Bpq2DYSKZuCs7JcY5ULqL1qgKiDj+uZDpxtki+GE+K4icSVQ9aU8JEn4Q6kYAI6HmwfohTw3fc+tCjpGiaFLe/Me9BYtNp7y5YKJPFoLlE+gd0hlsvCPPZ75vZKp8+CqIrzgjVktHe3Ps06Bsy5Op2d0bXOjtNqBqlOIVXhBnalc2lrf2N7fhLK/vXe0vlVe9Xo7y++0pd7SYRgvEoap6e2/Aq8rXelKV7rSla50pStd6UpXutIBXc32pGPafi2JFfOTnnTaQ2js1hZ/MnoVd2dq2SqK+KO+KjuyDdPAqwJqSkPD1/DS9ar8PxVg3rrMJ99/AAAAAElFTkSuQmCC" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">Cuphead é um jogo infernal, não só porque os protagonistas precisam derrotar o próprio diabo, mas porque é extremamente difícil. Todas as fases apresentam inúmeros obstáculos ao mesmo tempo, exigindo muita atenção, timing, paciência e rapidez nos dedos. Isso sem falar nos bosses...<br>
+              </p>
+          
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Veja mais
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Assista esse e mais filmes <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwjakZD31KOBAxWOHq0GHV4cBLYYABACGgJwdg&gclid=Cj0KCQjw9fqnBhDSARIsAHlcQYRsf7pEGfGAgCzljaueOH9AjtTRZc8jVpwrpa8JFxkbEv7qbzLLtasaAl9PEALw_wcB&sig=AOD64_3RW6rB16p5denpW432KArZcsA9GA&q&adurl&ved=2ahUKEwiWqoP31KOBAxVXBbkGHUSsABwQ0Qx6BAgKEAE">aqui</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <br><br>
+    <hr class="col-11 m-auto">
+    <div id="conteudos" class="col-11 m-auto">
+      <h2 class="text-center">Cuphead</h2>
+      <p style="font-size: 110%;">
+        Cuphead é um jogo eletrônico de run and gun e plataforma criado pelos irmãos canadenses Chad e Jared Moldenhauer através da Studio MDHR. O jogo foi inspirado no estilo de animação Rubber hose (em português, "mangueira de borracha") usado em desenhos animados da Era de Ouro da animação americana, como o trabalho dos estúdios Fleischer Studios, Warner Bros. Cartoons e Walt Disney Animation Studios, procurando manter a obra em qualidades subversivas e surrealistas. O jogo foi lançado em 29 de setembro de 2017 para Xbox One e Microsoft Windows.
+      </p>
+    </div>
+
+    <footer id="footer" class="page-footer p-5 col-11 m-auto" 
+            style="background-color:#333;">
+      <div class="text-center">
+        <a href="#">@2023 copyright: Renan Rilley</a>
+      </div>
+    </footer>
+            
+    
+
+  </body>
+</html>
